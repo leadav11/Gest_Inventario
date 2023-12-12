@@ -218,7 +218,7 @@ public class Frm_Menú extends javax.swing.JFrame {
         Salirtxt.setForeground(new java.awt.Color(0, 0, 0));
         Salirtxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Salirtxt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salida 1.png"))); // NOI18N
-        Salirtxt.setText("Salir");
+        Salirtxt.setText("Cerrar Sesión");
         Salirtxt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SalirtxtMouseClicked(evt);
@@ -315,7 +315,10 @@ public class Frm_Menú extends javax.swing.JFrame {
     }//GEN-LAST:event_InventariotxtMouseExited
 
     private void SalirtxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalirtxtMouseClicked
-                    System.exit(0);
+                    Frm_Login ing = new Frm_Login();
+            ing.setVisible(true);
+            ing.show();
+            dispose();
     }//GEN-LAST:event_SalirtxtMouseClicked
 
     private void SalirtxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SalirtxtMouseEntered
